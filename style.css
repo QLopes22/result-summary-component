@@ -1,0 +1,92 @@
+html {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Hanken Grotesk', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: normal;
+}
+
+
+/* Mobile Styles */
+.container {
+    width: 23.44rem;
+    background-color: pink;
+}
+
+.hero-section {
+    background-image:linear-gradient(180deg, #75F 0%, #6943FF 0.01%, #2F2CE9 100%);
+    background-color: rgb(118, 36, 118);
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+}
+
+.result-score {
+    background-image:linear-gradient(180deg, #4D21C9 0%, rgba(37, 33, 201, 0.00) 100%, rgba(37, 33, 201, 0.00) 100%);
+    width: 8.75rem;
+    height: 8.75rem;
+    border-radius: 4.37rem;
+}
+
+p {
+    margin: 0;
+    padding: 1rem;
+}
+
+h1 {
+    color: white;
+    font-size: 3.5rem;
+    font-weight: 800;
+    line-height: 4.5rem;
+    margin: 0;
+    padding-top: 1.56rem;
+}
+
+h2 {
+    color: #cac9ff;
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: normal;
+    margin: 0;
+}
+
+.motivation-snippet {
+    text-align: center;
+}
+
+.small-icon {
+    display: flex;
+    justify-content: start;
+}
+
+.reaction {
+    /* width: 19.68rem; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.icon-txt {
+    padding: 0;
+    margin: 0;
+}
+
+button {
+    margin-bottom: 1.5rem;
+    width: 19.68rem;
+    height: 3.5rem;
+    color: white;
+    background-color: #303B59;
+    border-radius: 5rem;
+    border: none;
+    font-size: 1.12rem;
+    font-weight: 700;
+    line-height: normal;
+}
