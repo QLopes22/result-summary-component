@@ -24,8 +24,30 @@ body {
 .hero-section {
     background-image:linear-gradient(180deg, #75F 0%, #6943FF 0.01%, #2F2CE9 100%);
     background-color: rgb(118, 36, 118);
-    border-bottom-left-radius: 1rem;
-    border-bottom-right-radius: 1rem;
+    border-bottom-left-radius: 2rem;
+    border-bottom-right-radius: 2rem;
+    color: white;
+}
+
+.results {
+    font-size: 1.125rem;
+    font-weight: 700;
+    line-height: normal;
+    color: #cac9ff;
+    padding: 1.5em;
+}
+
+.big-score {
+    font-size: 3.5rem;
+    font-weight: 800;
+    line-height: 4.5rem;
+}
+
+.full-score {
+    font-size: 1rem;
+    font-weight: 700;
+    color: #cac9ff;
+    opacity: 0.5168;
 }
 
 .result-score {
@@ -33,11 +55,12 @@ body {
     width: 8.75rem;
     height: 8.75rem;
     border-radius: 4.37rem;
+    margin: auto;
 }
 
 p {
     margin: 0;
-    padding: 1rem;
+    padding: 1em;
 }
 
 h1 {
@@ -57,8 +80,31 @@ h2 {
     margin: 0;
 }
 
+.motivation {
+    font-size: 1.5rem;
+    font-weight: 700;
+    padding: 0;
+    margin: 0;
+    margin-top: 24px;
+}
+
 .motivation-snippet {
     text-align: center;
+    font-size: 1rem;
+    font-weight: 500;
+    color:#cac9ff;
+    width: 260px;
+    padding: 0;
+    margin: 8px auto;
+    padding-bottom: 40px;
+}
+
+.sum-txt {
+    text-align: left;
+    font-size: 1.125rem;
+    font-weight: 700;
+    color: #303b59;
+    padding-left: 2rem;
 }
 
 .small-icon {
@@ -66,8 +112,7 @@ h2 {
     justify-content: start;
 }
 
-.reaction {
-    /* width: 19.68rem; */
+.summary {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -78,8 +123,14 @@ h2 {
     margin: 0;
 }
 
+td {
+    display: flex;
+    flex-direction: column;
+}
+
 button {
-    margin-bottom: 1.5rem;
+    margin-top: .375em;
+    margin-bottom: 1.5em;
     width: 19.68rem;
     height: 3.5rem;
     color: white;
