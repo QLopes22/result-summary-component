@@ -18,7 +18,6 @@ body {
 /* Mobile Styles */
 .container {
     width: 23.44rem;
-    background-color: pink;
 }
 
 .hero-section {
@@ -99,33 +98,61 @@ h2 {
     padding-bottom: 40px;
 }
 
-.sum-txt {
+.sum {
     text-align: left;
-    font-size: 1.125rem;
-    font-weight: 700;
-    color: #303b59;
-    padding-left: 2rem;
+    color: black;
+    font-size: 18px;
+    font-weight: 700px;
+    padding: .5em 0 0 2em;
 }
 
-.small-icon {
+.sum-flex {
     display: flex;
-    justify-content: start;
+    flex-direction: column;
+    justify-content: center;
+    width: 19.687rem;
+    gap: 1rem;
+    margin: 1rem auto;
 }
 
-.summary {
+.sum-container {
     display: flex;
     justify-content: space-between;
+    width: 100%;
+}
+
+.flex {
+    display: flex;
+    justify-content: center;
     align-items: center;
 }
 
-.icon-txt {
-    padding: 0;
-    margin: 0;
+.reaction {
+    border-radius: 12px;
+    background: var(--red-95-white, linear-gradient(0deg, rgba(255, 255, 255, 0.95) 0%, rgba(255, 255, 255, 0.95) 100%), #F55);
 }
 
-td {
-    display: flex;
-    flex-direction: column;
+.memory{
+    border-radius: 12px;
+background: var(--yellow-95-white, linear-gradient(0deg, rgba(255, 255, 255, 0.95) 0%, rgba(255, 255, 255, 0.95) 100%), #FFB21E);
+}
+
+.verbal{
+    border-radius: 12px;
+    background: var(--green-95-white, linear-gradient(0deg, rgba(255, 255, 255, 0.95) 0%, rgba(255, 255, 255, 0.95) 100%), #00BB8F);
+}
+
+.visual{
+    border-radius: 12px;
+    background: var(--blue-95-white, linear-gradient(0deg, rgba(255, 255, 255, 0.95) 0%, rgba(255, 255, 255, 0.95) 100%), #1125D6);;
+}
+
+.flex > img {
+    padding-left: 1rem;
+}
+
+span {
+    opacity: .5;
 }
 
 button {
