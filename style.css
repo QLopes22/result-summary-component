@@ -1,17 +1,17 @@
-html {
-    padding: 0;
-    margin: 0;
-}
 
 body {
     font-family: 'Hanken Grotesk', sans-serif;
     display: flex;
+    background-color: #ECF2FF;
     justify-content: center;
     align-items: center;
     text-align: center;
     font-size: 1rem;
     font-weight: 500;
     line-height: normal;
+    padding: 0;
+    margin: 0 auto;
+    width: 23.437rem;
 }
 
 
@@ -19,6 +19,7 @@ body {
 .container {
     width: 23.44rem;
 }
+
 
 .hero-section {
     background-image:linear-gradient(180deg, #75F 0%, #6943FF 0.01%, #2F2CE9 100%);
@@ -73,8 +74,8 @@ h1 {
 
 h2 {
     color: #cac9ff;
-    font-size: 1rem;
-    font-weight: 700;
+    font-size: 1.125rem;
+    font-weight: 500;
     line-height: normal;
     margin: 0;
 }
@@ -132,9 +133,17 @@ h2 {
     background: var(--red-95-white, linear-gradient(0deg, rgba(255, 255, 255, 0.95) 0%, rgba(255, 255, 255, 0.95) 100%), #F55);
 }
 
+.item-react-title {
+    color: #FF5555;
+}
+
 .memory{
     border-radius: 12px;
 background: var(--yellow-95-white, linear-gradient(0deg, rgba(255, 255, 255, 0.95) 0%, rgba(255, 255, 255, 0.95) 100%), #FFB21E);
+}
+
+.item-mem-title {
+    color: #FFB21E;
 }
 
 .verbal{
@@ -142,9 +151,17 @@ background: var(--yellow-95-white, linear-gradient(0deg, rgba(255, 255, 255, 0.9
     background: var(--green-95-white, linear-gradient(0deg, rgba(255, 255, 255, 0.95) 0%, rgba(255, 255, 255, 0.95) 100%), #00BB8F);
 }
 
+.item-verb-title {
+    color: #00BB8F;
+}
+
 .visual{
     border-radius: 12px;
     background: var(--blue-95-white, linear-gradient(0deg, rgba(255, 255, 255, 0.95) 0%, rgba(255, 255, 255, 0.95) 100%), #1125D6);;
+}
+
+.item-vis-title {
+    color: #1125D6;
 }
 
 .flex > img {
@@ -167,4 +184,149 @@ button {
     font-size: 1.12rem;
     font-weight: 700;
     line-height: normal;
+}
+
+
+/* desktop styles */
+
+@media (width > 736px) {
+    .container {
+        width: 736px;
+        height: 512px; 
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: white;
+        margin-top: 10rem;
+        border-radius: 2rem;
+    }
+    
+    
+    .hero-section {
+        border-radius: 2rem;
+        height: 100%;
+        width: 368px;
+    }
+
+    .result {
+        padding: 38px;
+    }
+    
+    .result-score {
+        height: 200px;
+        width: 200px;
+        border-radius: 50%;
+    }
+
+    .big-score {
+        padding-top: 50px;
+        font-size: 72px;
+        font-weight: 800px;
+        line-height: 72px;
+    }
+
+    .full-score {
+        font-size: 18px;
+        font-weight: 700px;
+    }
+    
+    .motivation {
+        font-size: 1.5rem;
+        font-weight: 700;
+        padding: 0;
+        margin-top: 28px;
+    }
+    
+    .motivation-snippet {
+        text-align: center;
+        font-size: 18px;
+        font-weight: 500;
+        color:#cac9ff;
+        width: 260px;
+        padding: 0;
+        margin-top: 14px;
+    }
+    
+    .summary {
+        height: 100%;
+        width: 288px;
+        padding: 0 40px;   
+    }
+
+    .sum {
+        text-align: left;
+        color: black;
+        font-size: 24px;
+        font-weight: 700px;
+        padding: 40px 0 0 0;
+    }
+    
+    .sum-flex {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+        gap: 1rem;
+        margin: 28px auto;
+    }
+    
+    .sum-container {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+    
+    .flex {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .reaction {
+        border-radius: 12px;
+        background: var(--red-95-white, linear-gradient(0deg, rgba(255, 255, 255, 0.95) 0%, rgba(255, 255, 255, 0.95) 100%), #F55);
+    }
+    
+    .memory{
+        border-radius: 12px;
+    background: var(--yellow-95-white, linear-gradient(0deg, rgba(255, 255, 255, 0.95) 0%, rgba(255, 255, 255, 0.95) 100%), #FFB21E);
+    }
+    
+    .verbal{
+        border-radius: 12px;
+        background: var(--green-95-white, linear-gradient(0deg, rgba(255, 255, 255, 0.95) 0%, rgba(255, 255, 255, 0.95) 100%), #00BB8F);
+    }
+    
+    .visual{
+        border-radius: 12px;
+        background: var(--blue-95-white, linear-gradient(0deg, rgba(255, 255, 255, 0.95) 0%, rgba(255, 255, 255, 0.95) 100%), #1125D6);;
+    }
+    
+    .flex > img {
+        padding-left: 1rem;
+    }
+    
+    span {
+        opacity: .5;
+    }
+    
+    button {
+        margin-top: .375em;
+        margin-bottom: 1.5em;
+        width: 288px;
+        height: 56px;
+        color: white;
+        background-color: #303B59;
+        border-radius: 5rem;
+        border: none;
+        font-size: 18px;
+        font-weight: 700;
+        line-height: normal;
+    }
+
+    button:hover {
+        background: var(--Gradient-1, linear-gradient(180deg, #75F 0%, #6943FF 0.01%, #2F2CE9 100%));
+        cursor: pointer; 
+    }
+    
 }
